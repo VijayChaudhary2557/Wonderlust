@@ -1,0 +1,1 @@
+mongodb+srv://vijaychaudhary2557:Rudra17@xyz@cluster0.y6sup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0

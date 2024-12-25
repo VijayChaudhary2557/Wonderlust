@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+    <div class="col-8 offset-2 new-form mb-3 mt-3">
+        <h3>Edit your listing</h3>
+        <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" novalidate enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input class="form-control" type="text" name="listing[title]" value="<%= listing.title %>" placeholder="Enter title." required>
+                <div class="invalid-feedback">Please enter valid Title.</div>
+
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" type="text" name="listing[description]" placeholder="Enter description." required><%= listing.description %></textarea>
+                <div class="invalid-feedback">Please enter a valid Description.</div>
+            </div>
+            <div class="mb-3">
+                <img src="<%= listing.image.url %>" style="max-width: 500px; max-height: 300px; border-radius: 10px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Update Image</label>
+                <input class="form-control" type="file" name="listing[image]">
+                <div class="invalid-feedback">Please enter a valid Image.</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-12 col-md-4 col-lg-4">
+                    <label for="price" class="form-label">Price</label>
+                    <input class="form-control" type="number" name="listing[price]" value="<%= listing.price %>" placeholder="Enter price." required>
+                    <div class="invalid-feedback">Please enter a valid Price.</div>
+                </div>
+                <div class="mb-3 col-12 col-md-8 col-lg-8">
+                    <label for="country" class="form-label">Country</label>
+                    <input class="form-control" type="text" name="listing[country]" value="<%= listing.country %>" placeholder="Enter country." required>
+                    <div class="invalid-feedback">Please enter a valid Country.</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input class="form-control" type="text" name="listing[location]" value="<%= listing.location %>" placeholder="Enter location." required>
+                <div class="invalid-feedback">Please enter a valid Location.</div>
+            </div>
+
+            <button class="btn btn-danger">Edit</button>
+        </form>
+    </div>
+</div>
