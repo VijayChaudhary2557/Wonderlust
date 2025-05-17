@@ -15,19 +15,19 @@
 
 ## 📁 Project Structure
 
-Wonderlust/
-├── controllers/
-├── models/
-├── routes/
-├── views/
-├── public/
-├── uploads/
-├── utils/
-├── app.js
-├── cloudConfig.js
-├── middleware.js
-├── package.json
-└── README.md
+Wonderlust/  
+├── controllers/  
+├── models/  
+├── routes/  
+├── views/  
+├── public/  
+├── uploads/  
+├── utils/  
+├── app.js  
+├── cloudConfig.js  
+├── middleware.js  
+├── package.json  
+└── README.md  
 
 
 ---
@@ -66,16 +66,16 @@ CLOUDINARY_API_SECRET=your_api_secret
 npm start
 ```
 
-#✨ ***Features***
--**User Registration & Login**
--**Add, Edit, and Delete accommodation listings**
--**Upload images using Cloudinary**
--**Check Location in Map**
--**Add Reviews and Comments**
--**Mobile-friendly responsive design**
+#✨ ***Features***  
+-**User Registration & Login**  
+-**Add, Edit, and Delete accommodation listings**  
+-**Upload images using Cloudinary**  
+-**Check Location in Map**  
+-**Add Reviews and Comments**  
+-**Mobile-friendly responsive design**  
 
 
-# 📸 Screenshots
+# 📸 Screenshots  
 
 ![Screenshot 2025-05-17 140936](https://github.com/user-attachments/assets/7198c24f-53fa-4191-80d1-ab3a4dc97663)
 
