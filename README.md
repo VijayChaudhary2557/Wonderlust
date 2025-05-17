@@ -66,13 +66,13 @@ CLOUDINARY_API_SECRET=your_api_secret
 npm start
 ```
 
-#✨ ***Features***  
--**User Registration & Login**  
--**Add, Edit, and Delete accommodation listings**  
--**Upload images using Cloudinary**  
--**Check Location in Map**  
--**Add Reviews and Comments**  
--**Mobile-friendly responsive design**  
+##✨ ***Features***  
+- **User Registration & Login**  
+- **Add, Edit, and Delete accommodation listings**  
+- **Upload images using Cloudinary**  
+- **Check Location in Map**  
+- **Add Reviews and Comments**  
+- **Mobile-friendly responsive design**  
 
 
 # 📸 Screenshots  
