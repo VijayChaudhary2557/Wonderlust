@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 const initData = require('./data');
 const Listing = require('./../models/listing');
-const dbUrl = process.env.ATLASDB_URL;
+const dbUrl = process.env.MONGO_URI || "mongodb+srv://vijaychaudhary2557:Rudra17xyz@cluster0.y6sup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 
 main().then(() => console.log('Connected to DB')).catch((err) => console.log(err));
 
 async function main() {
-    await mongoose.connect("mongodb+srv://vijaychaudhary2557:Rudra17xyz@cluster0.y6sup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    await mongoose.connect(dbUrl)
 }
 
 const initDB = async () => {

@@ -41,7 +41,7 @@ app.use(express.static(path.join(__dirname, '/public')))
 
 
 
-const dbUrl = process.env.ATLASDB_URL;
+const dbUrl = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/wanderlust';
 
 
 
